@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/cardview"
+        app:cardElevation="3dp"
+        android:layout_margin="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="5.5"
+            android:orientation="vertical"
+            android:background="@color/teal_200"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageview"
+                android:layout_weight="4"
+                android:src="@drawable/imgepick"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1.5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:id="@+id/tvtitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:id="@+id/tvdesciption"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RS. 300"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:textColor="#E31A5E"
+                        android:id="@+id/tvprice"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

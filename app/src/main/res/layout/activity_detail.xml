@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ivimage"
+        android:src="@drawable/imgepick"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="50sp"
+        android:id="@+id/txtname"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Description"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:id="@+id/txtdesc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtprice"
+            android:text="Price"
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            android:textSize="40sp"
+            android:layout_above="@+id/btndelete"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:id="@+id/btndelete"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:onClick="deleteRecipe"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:id="@+id/btnupdate"
+            android:onClick="updateRecipe"/>
+    </RelativeLayout>
+
+</LinearLayout>

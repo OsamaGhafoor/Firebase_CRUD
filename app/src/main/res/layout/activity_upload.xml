@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/foodimage"
+            android:src="@drawable/imgepick"/>
+
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/line"
+            android:hint="Recipe Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableBottom="@drawable/line"
+            android:hint="Description"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="Price"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Select Image"
+            android:textSize="22sp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/teal_200"
+            android:textColor="@color/white"
+            android:id="@+id/btnselectimg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload Recipe"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_200"
+            android:id="@+id/btnuploadimg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#DA0303"
+            android:textSize="17sp"
+            android:id="@+id/txtmsg"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
